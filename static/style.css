@@ -1,0 +1,42 @@
+#alarm {
+	text-align: center;
+	font-family: sans-serif;
+	color: red;
+	font-size: 50px;
+	font-weight: bold;
+	animation: flash 1s infinite;
+}
+
+#alarmContainer{
+	display: block;
+	height: 100px;
+}
+
+#chartContainer {
+	display: block;
+	margin: 0 auto;
+	width: 1000px;
+	height: 600px;
+}
+
+.hidden {
+	display: none;
+}
+
+@keyframes flash {
+	0%, 20%, 40%, 60% {
+		opacity: 1;
+	}
+	
+	10%, 30%, 50% {
+		opacity: 0;
+	}
+	
+	0%, 100% {
+		font-size: 50px;
+	}
+	
+	50% {
+		font-size: 70px;
+	}
+}
